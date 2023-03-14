@@ -68,6 +68,8 @@ begin
     
     default clock is rising_edge(clk_in);
 
-	comparison_assert: postponed assert nda_res = p_plus_psl;
+    comparison_assert: postponed assert nda_res = p_plus_psl;
+
+    cover_psl: cover {true; true; p_plus_psl = '0'};
 end;
 

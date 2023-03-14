@@ -1,8 +1,10 @@
 [tasks]
 compare
+cover
 
 [options]
 compare: mode bmc
+cover: mode cover
 depth 100
 
 [engines]
