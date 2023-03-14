@@ -71,5 +71,7 @@ begin
     comparison_assert: postponed assert nda_res = p_plus_psl;
 
     cover_psl: cover {true; true; p_plus_psl = '0'};
+
+    cover_psl_first: cover {true; true; [*]; p_plus_psl = '0'};
 end;
 
